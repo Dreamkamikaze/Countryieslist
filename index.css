@@ -1,0 +1,178 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  /* 1 */
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
+  /* 2 */
+
+}
+
+main{
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body{
+  margin: 0;
+  background-color: rgb(45, 46, 121);
+  height: 100vh;
+}
+
+p{
+  color: aliceblue;
+}
+
+#tittle{
+  display:flex;
+  width: 100%;
+  padding-bottom: 1rem;
+  justify-content: center;
+  text-align: center;
+  color: aliceblue;
+}
+
+h1{
+  margin: 0;
+ padding: 0.5rem;
+ padding-top: 1rem;
+ font-size: 3.5rem;
+}
+
+.search{
+display: flex;
+justify-content: center;
+width: 100%;
+align-items: center;
+flex-direction: column;
+gap: 2rem;
+padding-bottom: 1rem;
+}
+
+
+.countries{
+  background-color: rgb(201, 194, 194);
+  height: 3rem;
+  width: 50%;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+}
+
+
+.card{
+  
+  display: flex;
+  width: 17rem;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  text-align: center;
+  background-color: rgb(60, 69, 145);
+}
+
+p{
+  font-weight: 700;
+align-items: center;
+margin: 0;
+padding: 5px 0;
+cursor: default;
+}
+
+.text:hover{
+  color: grey;
+  cursor: pointer;
+}
+
+.imgflag{
+  width: 100%;
+  height: 10rem;
+  border-radius: 1rem;
+}
+
+.a{
+  display: flex;
+  flex-direction: row;
+}
+
+.country{
+  padding: 0 2rem;
+  padding-bottom: 7rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  gap: 1rem;
+  flex-wrap: wrap;
+ 
+}
+
+.weather{
+  display: flex;
+  flex-direction: column;
+  height: 7rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-weather{
+  display: flex;
+  padding: 0;
+}
+
+.information-1 {
+  display: none;
+}
+
+.information-2{
+  display: none;
+}
+
+.show-country{
+  display: flex;
+  flex-direction: row;
+}
+
+.lds-circle {
+  display: inline-block;
+  transform: translateZ(1px);
+}
+.lds-circle > div {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  background: #c52525;
+
+  animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+@keyframes lds-circle {
+  0%, 100% {
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(1800deg);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    transform: rotateY(3600deg);
+  }
+}
+
+@media (max-width: 320px){
+  h1{
+    font-size: 2.5rem;
+  }
+}
